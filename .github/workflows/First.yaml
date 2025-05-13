@@ -1,11 +1,17 @@
-name: First-File
-on: workflow_dispatch
+name: GitHubAction-Basic-Syntax
+on : workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Welcome User
-        run : echo "Hello Murali, Welcome to GITHUB Actions, Practise Repo"
-      - name: Purpose of this Repo
-        run : echo "In this Repo, We can learn GitHub Actions by practising it in Real time"
-        
+      - name: First-Job
+        run: echo "This is a FIrstJob"
+      - name: Second-Job
+        run : echo "This is a FirstJob Second Step"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second-Job
+        run: echo "This is Second Job"
+      - name: Exiting
+        run: echo "Exiting the Repo"
