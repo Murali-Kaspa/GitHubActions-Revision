@@ -1,11 +1,17 @@
-name: First-Job
-on: workflow_dispatch
+name: GitHubAction-Basic-Syntax
+on : push
 jobs:
-  FirstJob:
+  first-job:
     runs-on: ubuntu-latest
     steps:
       - name: First-Job
-        run : echo "Hello"
+        run: echo "This is a FIrstJob"
       - name: Second-Job
-        run : echo "World"
-        
+        run : echo "This is a FirstJob Second Step"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second-Job
+        run: echo "This is Second Job"
+      - name: Exiting
+        run: echo "Exiting the Repo"
