@@ -1,5 +1,5 @@
 name: GitHubAction-Basic-Syntax
-on : push
+on : pull
 jobs:
   first-job:
     runs-on: ubuntu-latest
