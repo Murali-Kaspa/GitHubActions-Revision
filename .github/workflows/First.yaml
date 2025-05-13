@@ -1,5 +1,5 @@
 name: GitHubAction-Basic-Syntax
-on : pull_request
+on : workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
